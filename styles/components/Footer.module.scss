@@ -21,7 +21,7 @@
       display: flex;
     }
   
-    .logo svg > * {
+    .logo .svg > * {
       display: block;
       fill: var(--clr-primary);
       height: 2rem;
@@ -30,22 +30,22 @@
       transition: fill 250ms ease-in;
     }
   
-    .logo svg:hover > *,
-    .logo svg:focus > *{
+    .logo .svg:hover > *,
+    .logo .svg:focus > *{
       fill: var(--clr-accent-400);
     }
   
     .logo,
-    .socials a {
+    .socials .anchor {
       transition: color 250ms ease-in;
     }
   
-    .socials a {
+    .socials .anchor {
       font-size: 1.25rem;
     }
   
-    .socials a:hover,
-    .socials a:focus {
+    .socials .anchor:hover,
+    .socials .anchor:focus {
       color: var(--clr-accent-400);
     }
   }

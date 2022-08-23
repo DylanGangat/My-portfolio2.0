@@ -20,8 +20,8 @@
       background-color: transparent;
     }
   
-    .logo svg > *,
-    .nav-list svg {
+    .logo .svg > *,
+    .nav-list .svg {
       display: block;
       fill: var(--clr-primary);
       height: 2rem;
@@ -30,25 +30,35 @@
       transition: fill 250ms ease-in;
     }
   
-    .logo svg:hover > *,
-    .logo svg:focus > *,
-    .nav-list svg:hover,
-    .nav-list svg:focus {
+    .logo .svg:hover > *,
+    .logo .svg:focus > *,
+    .nav-list .svg:hover,
+    .nav-list .svg:focus {
       fill: var(--clr-accent-400);
     }
   }
   
   // Dark mode toggle
   
-  :root[data-color-mode="light"] .light-hidden {
+  
+  // :root[data-color-mode="light"] .light-hidden {
+  //   display: none;
+  // }
+  
+  // :root[data-color-mode="dark"] .dark-hidden {
+  //   display: none;
+  // }
+  
+  // :root[data-color-mode="dark"] .img {
+  //   filter: contrast(0.8);
+  // }
+  
+// REMOVE THIS IN THE FUTURE 
+  // .light-hidden {
+  //   display: none;
+  // }
+
+  .dark-hidden {
     display: none;
+    
   }
-  
-  :root[data-color-mode="dark"] .dark-hidden {
-    display: none;
-  }
-  
-  :root[data-color-mode="dark"] img {
-    filter: contrast(0.8);
-  }
-  
