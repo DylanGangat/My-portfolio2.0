@@ -1,0 +1,54 @@
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: var(--fw-700);
+    padding: 0.75rem 2rem; // Gives a weird shake in text when in em
+    color: var(--fg, var(--clr-btn));
+    background-color: var(--bg, var(--clr-accent-400));
+    border: 1px solid var(--clr-border-btn);
+    border-radius: var(--corners);
+    box-shadow: 0px 23px 28px -24px hsl(180, 11%, 7%);
+    transition: background-color 250ms ease-in, box-shadow 250ms ease-out,
+      transform 250ms ease-out;
+  
+    &:hover,
+    &:focus {
+      background-color: var(--clr-accent-300);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 0 var(--clr-base);
+    }
+  }
+  
+  .project-title {
+    transition: color 250ms ease-in-out;
+  
+    &:hover,
+    &:focus {
+      color: var(--clr-accent-400);
+    }
+  }
+  
+  .view-link {
+    display: inline-block;
+    font-size: var(--fs-300);
+    font-weight: var(--fw-700);
+    vertical-align: middle;
+    transition: color 250ms ease-in;
+  
+    &:hover,
+    &:focus {
+      color: var(--clr-accent-400);
+    }
+  
+    .icon {
+      font-size: 0.75rem;
+      margin-left: 0.25em;
+      transition: margin-left 250ms ease-in;
+    }
+  
+    &:hover .icon,
+    &:focus .icon {
+      margin-left: 0.5em;
+    }
+  }
+  

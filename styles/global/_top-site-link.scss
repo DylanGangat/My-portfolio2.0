@@ -1,0 +1,27 @@
+.top-of-site-link {
+    position: fixed;
+    font-size: 2.5rem;
+    bottom: .5em;
+    right: .5em;
+    opacity: 0;
+    visibility: hidden; 
+    transition: all 250ms ease-in;
+
+    i {
+        // Had to add background to the icon because the footer nav line was being shown through the arrow section
+        filter: var(--drop-shadow);
+        border-radius: 50%;
+        background-color: var(--clr-base);
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--clr-accent-400);
+    }
+
+    &[data-visible="true"] {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+

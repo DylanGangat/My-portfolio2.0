@@ -1,0 +1,22 @@
+.details {
+  --spacer: 4rem;
+  --flow-space: 1.5rem;
+  max-width: 55rem;
+
+  ul > * + * {
+    margin-top: 0.25em;
+  }
+
+  a {
+    display: inline-block;
+    color: var(--clr-accent-400);
+    font-weight: var(--fw-700);
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 250ms ease-in;
+  }
+
+  a:hover,
+  a:focus {
+    border-bottom: 2px solid currentColor;
+  }
+}

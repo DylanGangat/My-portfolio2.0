@@ -1,0 +1,19 @@
+.tech-stack {
+  display: flex;
+  font-size: var(--fs-300);
+  align-items: center;
+}
+
+.tech-stack > * + * {
+  margin-left: 0.5em;
+}
+
+.tech-stack svg {
+  fill: currentColor;
+  height: 24px;
+  width: 24px;
+  @media (min-width: 50em) {
+    height: 28px;
+    width: 28px;
+  }
+}

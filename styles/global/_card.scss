@@ -1,0 +1,82 @@
+.projects {
+    // This is the grid version not supported in Opera Mini browser
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    // gap: 3rem;
+    --gap: 2em;
+    --spacer: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+  
+    // Used to remove margins on the side because of the margins i used around the cards for making a gap
+  
+    margin-left: calc(var(--gap) / -2);
+    margin-right: calc(var(--gap) / -2);
+  }
+  
+  // This I used so I could make a gap around the card and the / 2 is because between the card both margins is applied so to counter this I half it to get the value I want.
+  .projects > * {
+    margin: calc(var(--gap) / 2);
+  }
+  
+  .card {
+    border-radius: var(--corners);
+    overflow: hidden;
+    flex-basis: 23rem;
+    flex-grow: 1;
+    max-width: 33rem;
+  
+    .mockup {
+      border-radius: var(--corners);
+      overflow: hidden;
+    }
+  
+    img {
+      width: 100%;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 450ms ease-in;
+    }
+  
+    img:hover,
+    img:focus,
+    &:hover img,
+    &:focus img {
+      transform: scale(1.05);
+    }
+  
+    .info {
+      --flow-space: 1em; // Was so the space can be more proportional in the card
+      padding: 1rem;
+    }
+  
+    .number {
+      font-size: var(--fs-500);
+      font-weight: var(--fw-700);
+    }
+  
+    .title {
+      margin-top: 0.5rem;
+    }
+  
+    .tech-stack {
+      display: flex;
+      font-size: var(--fs-300);
+      align-items: center;
+    }
+  
+    .tech-stack > * + * {
+      margin-left: 0.5em;
+    }
+  
+    .tech-stack svg {
+      fill: currentColor;
+      height: 24px;
+      width: 24px;
+      @media (min-width: 50em) {
+        height: 28px;
+        width: 28px;
+      }
+    }
+  }
+  

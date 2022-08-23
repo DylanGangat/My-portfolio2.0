@@ -1,0 +1,41 @@
+.split > .badges {
+    margin: var(--split-spacer, 2rem) auto 0 auto;
+  
+    @media (min-width: 50em) {
+      margin: 0 0 0 var(--split-spacer, 2rem);
+    }
+  }
+  
+  .badges {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
+  
+    > * + * {
+      margin-top: 1.5rem;
+  
+      @media (min-width: 50em) {
+        margin-top: 2rem;
+      }
+    }
+  
+    @media (min-width: 50em) {
+      padding: 4rem 0;
+      align-items: center;
+    }
+  
+    .badge {
+      display: flex;
+      align-items: center;
+    }
+  
+    .badge > * + * {
+      margin-left: 1em;
+    }
+  
+    .name {
+      color: var(--logo-black);
+    }
+  }
+  

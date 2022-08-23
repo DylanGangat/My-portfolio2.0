@@ -1,0 +1,106 @@
+section {
+    padding-top: var(--padding, 2rem);
+    padding-bottom: var(--padding, 2rem);
+  
+    @media (min-width: 50em) {
+      padding-top: var(--padding, 4rem);
+      padding-bottom: var(--padding, 4rem);
+    }
+  }
+  
+  .primary-header {
+    border-bottom: var(--nav-border);
+    padding: 1.5rem 0;
+    background-color: var(--clr-base);
+    width: 100%;
+  }
+  
+  .hero {
+    --flow-space: 1.5rem;
+    --spacer: 6rem;
+  }
+  
+  .about-me {
+    @media (min-width: 50em) {
+      .info {
+        flex-basis: 65%;
+      }
+  
+      .portrait {
+        flex-basis: 35%;
+      }
+    }
+  }
+  
+  .work {
+    --flow-space: 1.5rem;
+  }
+  
+  .coming-soon {
+    .description {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .tech-stack {
+      justify-content: center;
+    }
+  }
+  
+  .contact {
+    --flow-space: 1.5rem;
+  }
+  
+  .two-columns {
+    display: grid;
+    gap: 2em;
+    align-items: center;
+    @media (min-width: 50em) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .main-footer {
+    --spacer: 2rem;
+    padding: 2rem 0;
+    border-top: var(--nav-border);
+    border-bottom: var(--nav-border);
+  
+    @media (min-width: 50em) {
+      --spacer: 4rem;
+    }
+  }
+  
+  // Project details page
+  
+  .intro {
+    p {
+      --spacer: 4rem;
+  
+      @media (min-width: 50em) {
+        --spacer: 6rem;
+      }
+    }
+  }
+  
+  .goals {
+    @media (min-width: 50em) {
+      text-align: center;
+  
+      p {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+  
+  .web-stack .showcase {
+    --spacer: 4rem;
+  }
+  
+  .web-stack .info {
+    @media (min-width: 50em) {
+      align-items: center;
+    }
+  }
+  

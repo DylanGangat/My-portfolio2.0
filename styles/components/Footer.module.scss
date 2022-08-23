@@ -1,0 +1,52 @@
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // Had to add padding-right because the to-the-top btn was covering the github link
+    padding-right: 2.5em;
+  
+    @media (min-width: 81.25em) {
+      padding-right: 0;
+    }
+  
+    .socials {
+      display: flex;
+    }
+  
+    .socials > * + * {
+      margin-left: 1em;
+    }
+  
+    .logo {
+      display: flex;
+    }
+  
+    .logo svg > * {
+      display: block;
+      fill: var(--clr-primary);
+      height: 2rem;
+      width: 2rem;
+      cursor: pointer;
+      transition: fill 250ms ease-in;
+    }
+  
+    .logo svg:hover > *,
+    .logo svg:focus > *{
+      fill: var(--clr-accent-400);
+    }
+  
+    .logo,
+    .socials a {
+      transition: color 250ms ease-in;
+    }
+  
+    .socials a {
+      font-size: 1.25rem;
+    }
+  
+    .socials a:hover,
+    .socials a:focus {
+      color: var(--clr-accent-400);
+    }
+  }
+  

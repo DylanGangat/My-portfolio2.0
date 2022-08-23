@@ -1,0 +1,54 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .logo {
+      display: flex;
+      transition: color 250ms ease-in;
+    }
+  
+    .logo:hover,
+    .logo:focus {
+      color: var(--clr-accent-400);
+    }
+  
+    // Svg for theme toggle
+  
+    .theme-color {
+      border: none;
+      background-color: transparent;
+    }
+  
+    .logo svg > *,
+    .nav-list svg {
+      display: block;
+      fill: var(--clr-primary);
+      height: 2rem;
+      width: 2rem;
+      cursor: pointer;
+      transition: fill 250ms ease-in;
+    }
+  
+    .logo svg:hover > *,
+    .logo svg:focus > *,
+    .nav-list svg:hover,
+    .nav-list svg:focus {
+      fill: var(--clr-accent-400);
+    }
+  }
+  
+  // Dark mode toggle
+  
+  :root[data-color-mode="light"] .light-hidden {
+    display: none;
+  }
+  
+  :root[data-color-mode="dark"] .dark-hidden {
+    display: none;
+  }
+  
+  :root[data-color-mode="dark"] img {
+    filter: contrast(0.8);
+  }
+  
