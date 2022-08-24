@@ -13,13 +13,6 @@
       color: var(--clr-accent-400);
     }
   
-    // Svg for theme toggle
-  
-    .theme-color {
-      border: none;
-      background-color: transparent;
-    }
-  
     .logo .svg > *,
     .nav-list .svg {
       display: block;
@@ -36,29 +29,4 @@
     .nav-list .svg:focus {
       fill: var(--clr-accent-400);
     }
-  }
-  
-  // Dark mode toggle
-  
-  
-  // :root[data-color-mode="light"] .light-hidden {
-  //   display: none;
-  // }
-  
-  // :root[data-color-mode="dark"] .dark-hidden {
-  //   display: none;
-  // }
-  
-  // :root[data-color-mode="dark"] .img {
-  //   filter: contrast(0.8);
-  // }
-  
-// REMOVE THIS IN THE FUTURE 
-  // .light-hidden {
-  //   display: none;
-  // }
-
-  .dark-hidden {
-    display: none;
-    
   }

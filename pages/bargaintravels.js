@@ -8,8 +8,17 @@ import BargaintravelsOtherProjects from "../components/bargaintravels/Bargaintra
 
 import SectionComingSoon from "../components/SectionComingSoon";
 import SectionContact from "../components/SectionContact";
+import { useEffect } from "react";
 
 export default function bargaintravels() {
+  // To give this page it's unique colours
+
+  useEffect(() => {
+    document.body.classList.add("bargaintravels-colors");
+    document.body.classList.remove("animestudio-colors");
+    document.body.classList.remove("easybank-colors");
+  }, []);
+
   return (
     <>
       <Head>

@@ -2,7 +2,35 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Head from "next/head";
 
+import { useEffect, useRef } from "react";
+
 const Layout = ({ children }) => {
+  useEffect(() => {
+    document.documentElement.setAttribute("id", "top-of-site");
+    document.documentElement.setAttribute("data-color-mode", "light");
+
+    // Checks to see if you previously have been on the site which mode where you on by being saved to localstorage or if your system default has a mode preferrance.
+    if (
+      localStorage.getItem("data-color-mode") === "dark" ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches &&
+        !localStorage.getItem("data-color-mode"))
+    ) {
+      document.documentElement.setAttribute("data-color-mode", "dark");
+    }
+  }, []);
+
+  const toggleColorMode = e => {
+    console.log(e.currentTarget);
+
+    if (e.currentTarget.classList.contains("light-hidden")) {
+      document.documentElement.setAttribute("data-color-mode", "light");
+      localStorage.setItem("data-color-mode", "light");
+    } else {
+      document.documentElement.setAttribute("data-color-mode", "dark");
+      localStorage.setItem("data-color-mode", "dark");
+    }
+  };
+
   return (
     <>
       <Head>
@@ -45,7 +73,7 @@ const Layout = ({ children }) => {
           crossOrigin="anonymous"
         />
       </Head>
-      <Navbar />
+      <Navbar toggleColorMode={toggleColorMode}/>
       {children}
       <Footer />
     </>

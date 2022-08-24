@@ -41,8 +41,26 @@
     --fs-600: 3rem; // h2
     --fs-700: 6rem; // main heading
   }
+}
 
-  // REMOVE EVENTUALLY 
+// Colors for light mode
+
+:root[data-color-mode="light"] {
+  --clr-primary: hsl(180, 11%, 7%);
+
+  --clr-accent-300: hsl(182, 63%, 68%);
+  --clr-accent-400: hsl(183, 100%, 31%);
+  --clr-border-btn: hsl(183, 100%, 15%);
+
+  --clr-base: hsl(0, 0%, 100%);
+  --badge-shadow: 0px 8px 24px rgb(16, 20, 20, 0.2);
+  --drop-shadow: drop-shadow(0px 2px 5px rgb(16, 20, 20, 0.2));
+  --code: hsl(214, 32%, 91%);
+}
+
+// Colors for dark mode
+
+:root[data-color-mode="dark"] {
   --clr-primary: hsl(0, 0%, 93%);
 
   --clr-accent-300: hsl(183, 100%, 31%);
@@ -57,87 +75,56 @@
   --code: hsl(218, 17%, 35%);
 }
 
-// Colors for light mode
+// Animestudio page unique colors
 
-// :root[data-color-mode="light"] {
-//   --clr-primary: hsl(180, 11%, 7%);
+:root[data-color-mode="light"] .animestudio-colors {
+  --clr-accent-400: hsl(256, 78%, 53%);
+  --clr-accent-300: hsl(256, 79%, 81%);
+  --fg: hsl(180, 11%, 7%);
+  --clr-btn: hsl(180, 11%, 7%);
+  --clr-border-btn: hsl(256, 78%, 53%);
 
-//   --clr-accent-300: hsl(182, 63%, 68%);
-//   --clr-accent-400: hsl(183, 100%, 31%);
-//   --clr-border-btn: hsl(183, 100%, 15%);
+  --bg: hsl(0, 0%, 100%);
+}
 
-//   --clr-base: hsl(0, 0%, 100%);
-//   --badge-shadow: 0px 8px 24px rgb(16, 20, 20, 0.2);
-//   --drop-shadow: drop-shadow(0px 2px 5px rgb(16, 20, 20, 0.2));
-//   --code: hsl(214, 32%, 91%);
-// }
+:root[data-color-mode="dark"] .animestudio-colors {
+  --clr-accent-400: hsl(256, 79%, 81%);
+  --clr-accent-300: hsl(256, 79%, 71%);
+  --clr-border-btn: hsl(256, 78%, 53%);
+}
 
-// Colors for dark mode
+// Bargaintravels page unique colors
 
-// :root[data-color-mode="dark"] {
-//   --clr-primary: hsl(0, 0%, 93%);
+:root[data-color-mode="light"] .bargaintravels-colors {
+  --clr-accent-400: hsl(359, 93%, 65%);
+  --clr-accent-300: hsl(359, 94%, 76%);
+  --fg: hsl(180, 11%, 7%);
+  --clr-btn: hsl(180, 11%, 7%);
+  --clr-border-btn: hsl(359, 93%, 65%);
+  --bg: hsl(0, 0%, 100%);
+}
 
-//   --clr-accent-300: hsl(183, 100%, 31%);
-//   --clr-accent-400: hsl(182, 63%, 68%);
-//   --clr-border-btn: hsl(182, 63%, 34%);
+:root[data-color-mode="dark"] .bargaintravels-colors {
+  --clr-accent-400: hsl(359, 94%, 76%);
+  --clr-accent-300: hsl(359, 94%, 66%);
+  --clr-border-btn: hsl(359, 93%, 65%);
+}
 
-//   --clr-base: hsl(0, 0%, 24%);
+// Easybank page unique colors
 
-//   --badge-shadow: 0px 8px 24px rgb(16, 20, 20, 0.6);
-//   --drop-shadow: drop-shadow(0px 2px 5px rgb(16, 20, 20, 0.6));
+:root[data-color-mode="light"] .easybank-colors {
+  --clr-accent-400: hsl(136, 63%, 41%);
+  --clr-accent-300: hsl(0, 0%, 100%);
+  --fg: hsl(180, 11%, 7%);
+  --clr-btn: hsl(180, 11%, 7%);
+  --clr-border-btn: hsl(136, 63%, 41%);
+  --bg: hsl(0, 0%, 100%);
+  --clr-accent-300: hsl(136, 65%, 71%);
+}
 
-//   --code: hsl(218, 17%, 35%);
-// }
+:root[data-color-mode="dark"] .easybank-colors {
+  --clr-accent-400: hsl(136, 65%, 71%);
+  --clr-accent-300: hsl(136, 65%, 61%);
+  --clr-border-btn: hsl(136, 65%, 34%);
+}
 
-// // Animestudio page unique colors
-
-// :root[data-color-mode="light"] .animestudio-colors {
-//   --clr-accent-400: hsl(256, 78%, 53%);
-//   --clr-accent-300: hsl(256, 79%, 81%);
-//   --fg: hsl(180, 11%, 7%);
-//   --clr-btn: hsl(180, 11%, 7%);
-//   --clr-border-btn: hsl(256, 78%, 53%);
-
-//   --bg: hsl(0, 0%, 100%);
-// }
-
-// :root[data-color-mode="dark"] .animestudio-colors {
-//   --clr-accent-400: hsl(256, 79%, 81%);
-//   --clr-accent-300: hsl(256, 79%, 71%);
-//   --clr-border-btn: hsl(256, 78%, 53%);
-// }
-
-// // Bargaintravels page unique colors
-
-// :root[data-color-mode="light"] .bargaintravels-colors {
-//   --clr-accent-400: hsl(359, 93%, 65%);
-//   --clr-accent-300: hsl(359, 94%, 76%);
-//   --fg: hsl(180, 11%, 7%);
-//   --clr-btn: hsl(180, 11%, 7%);
-//   --clr-border-btn: hsl(359, 93%, 65%);
-//   --bg: hsl(0, 0%, 100%);
-// }
-
-// :root[data-color-mode="dark"] .bargaintravels-colors {
-//   --clr-accent-400: hsl(359, 94%, 76%);
-//   --clr-accent-300: hsl(359, 94%, 66%);
-//   --clr-border-btn: hsl(359, 93%, 65%);
-// }
-
-// // Easybank page unique colors
-
-// :root[data-color-mode="light"] .easybank-colors {
-//   --clr-accent-400: hsl(136, 63%, 41%);
-//   --clr-accent-300: hsl(0, 0%, 100%);
-//   --fg: hsl(180, 11%, 7%);
-//   --clr-btn: hsl(180, 11%, 7%);
-//   --clr-border-btn: hsl(136, 63%, 41%);
-//   --bg: hsl(0, 0%, 100%);
-//   --clr-accent-300: hsl(136, 65%, 71%);
-// }
-
-// :root[data-color-mode="dark"] .easybank-colors {
-//   --clr-accent-400: hsl(136, 65%, 71%);
-//   --clr-accent-300: hsl(136, 65%, 61%);
-//   --clr-border-btn: hsl(136, 65%, 34%);
-// }

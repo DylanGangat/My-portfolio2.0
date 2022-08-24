@@ -81,3 +81,22 @@ code {
   font-weight: var(--fw-700);
   letter-spacing: 2px;
 }
+
+  // Dark mode toggle
+  
+  .theme-color {
+    border: none;
+    background-color: transparent;
+  }
+
+  :root[data-color-mode="light"] .light-hidden {
+    display: none;
+  }
+  
+  :root[data-color-mode="dark"] .dark-hidden {
+    display: none;
+  }
+  
+  :root[data-color-mode="dark"] .img {
+    filter: contrast(0.8);
+  }

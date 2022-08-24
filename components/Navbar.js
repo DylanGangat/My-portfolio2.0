@@ -1,7 +1,7 @@
 import styles from "../styles/components/Navbar.module.scss";
 import Link from "next/link";
 
-const Navbar = () => {
+const Navbar = ({ toggleColorMode }) => {
   return (
     <header className="primary-header">
       <div className="container">
@@ -30,7 +30,8 @@ const Navbar = () => {
           <ul className={styles["nav-list"]}>
             <li className={styles["theme-toggle"]}>
               <button
-                className={`${styles["theme-color"]} ${styles["light-hidden"]}`}
+                onClick={e => toggleColorMode(e)}
+                className="theme-color light-hidden"
                 aria-label="light-mode-toggle"
               >
                 <svg
@@ -46,7 +47,8 @@ const Navbar = () => {
               </button>
 
               <button
-                className={`${styles["theme-color"]} ${styles["dark-hidden"]}`}
+                onClick={e => toggleColorMode(e)}
+                className="theme-color dark-hidden"
                 aria-label="dark-mode-toggle"
               >
                 <svg
