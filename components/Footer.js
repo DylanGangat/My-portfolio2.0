@@ -34,7 +34,7 @@ const Footer = () => {
                 className={styles.anchor}
                 aria-label="instagram"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://www.instagram.com/dylangangat/"
               >
                 <i className="fab fa-instagram"></i>
@@ -45,7 +45,7 @@ const Footer = () => {
                 className={styles.anchor}
                 aria-label="github"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://github.com/DylanGangat"
               >
                 <i className="fab fa-github"></i>

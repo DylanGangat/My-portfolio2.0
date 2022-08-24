@@ -23,6 +23,8 @@ const SectionHero = () => {
             alt="Dylan smiling"
             height="1707"
             width="2560"
+            priority
+            objectFit="cover"
           />
         </div>
       </div>

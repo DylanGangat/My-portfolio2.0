@@ -35,7 +35,7 @@ const SectionComingSoon = () => {
           </div>
           <a
             href="https://cozy-homes.netlify.app/"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             className="text-accent tag"
           >
             VIEW PROJECT
