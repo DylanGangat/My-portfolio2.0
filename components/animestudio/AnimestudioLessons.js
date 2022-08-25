@@ -13,7 +13,7 @@ export default function AnimestudioLessons() {
               This was my first multi-page project and I learned so much. From{" "}
               <strong>
                 creating a design system to drawing up a wireframe, and then
-                coding it out.
+                coding it out.{" "}
               </strong>
               I learned to appreciate all the tiny details that compound to form
               a website.

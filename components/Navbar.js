@@ -1,9 +1,9 @@
 import styles from "../styles/components/Navbar.module.scss";
 import Link from "next/link";
 
-const Navbar = ({ toggleColorMode }) => {
+const Navbar = ({ toggleColorMode, stickyNav }) => {
   return (
-    <header className="primary-header">
+    <header className={stickyNav ? "primary-header sticky" : "primary-header"}>
       <div className="container">
         <nav className={styles["main-nav"]}>
           <Link href="/">

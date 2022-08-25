@@ -13,13 +13,14 @@ export default function BargaintravelsLessons() {
               While developing this project I had a lot of small issues and
               hurdles to overcome so this taught me the power of
               <strong>
+                {" "}
                 googling and using StackOverflow to help guide me when I
                 stumbled.
               </strong>
             </p>
             <p>
               I learned how important it is to keep your files{" "}
-              <strong>very organized, your code clean and reusable.</strong>
+              <strong>very organized, your code clean and reusable. </strong>
               This could come back to bite you if you {"don't"} implement this
               because you might want to update your site in the future.
             </p>

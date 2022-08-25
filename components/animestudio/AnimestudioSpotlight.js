@@ -21,11 +21,11 @@ export default function AnimestudioSpotlight() {
                 I wanted to highlight on the anime info page how{" "}
                 <strong>I managed to reuse my code</strong>. With the event
                 listener attached to the similar to this list, it uses{" "}
-                <strong>event delegation</strong>
+                <strong>event delegation </strong>
                 and waits until you click on the anime cards name and{" "}
                 <strong>
                   updates local storage with
-                  {"it's"} unique id
+                  {" it's"} unique id
                 </strong>{" "}
                 and then reuses the function that is initially called when
                 loading the page.

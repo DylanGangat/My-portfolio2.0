@@ -12,8 +12,8 @@ const SectionAbout = () => {
         <div className="spacer split">
           <div className="info flow-content">
             <p>
-              Hi there. <strong>{"I’m"} Dylan.</strong> {"I’m"} a
-              <strong>self-taught, passionate introvert</strong> that takes
+              Hi there. <strong>{" I’m"} Dylan.</strong> {"I’m"} a
+              <strong> self-taught, passionate introvert</strong> that takes
               pleasure in building websites.
             </p>
             <p>
@@ -21,28 +21,30 @@ const SectionAbout = () => {
               BSc Sports Science. I found out early in my 2nd year that I loved
               sport but only on a surface level. I decided to drop Sports
               Science and look through the web for
-              <strong>a job that drives me</strong> and that is how I found web
+              <strong> a job that drives me</strong> and that is how I found web
               development.
             </p>
             <p>
               I got my first Udemy course on Javascript and from then on I had a
               <strong>
+                {" "}
                 increasingly growing passion for learning to code.
               </strong>
               Since then {"I’ve"} been hoining my skills and learning as much as
               I can on all media platforms while applying it to
-              <strong>real world senarios.</strong>
+              <strong> real world senarios.</strong>
             </p>
             <p>
               When {"I’m"} not staring at the screen all day
               <strong>
+                {" "}
                 I love to exercise, watch movies and have a passion for
                 traveling the world.
               </strong>
             </p>
             <p>
               {"I’m"} seeking a full-time role where I can
-              <strong>help a company achieve their goals.</strong>
+              <strong> help a company achieve their goals.</strong>
             </p>
           </div>
           <div className="portrait">

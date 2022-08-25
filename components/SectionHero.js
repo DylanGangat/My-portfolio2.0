@@ -10,7 +10,7 @@ const SectionHero = () => {
           <h1 className="main-heading">Frontend Developer</h1>
           <p className="subtitle">
             that loves working with people to
-            <strong>create beautiful and scalable websites.</strong>
+            <strong> create beautiful and scalable websites.</strong>
           </p>
           <Link href="#work">
             <a className="btn">Check my work</a>

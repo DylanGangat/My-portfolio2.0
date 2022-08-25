@@ -12,10 +12,10 @@ export default function EasybankLessons() {
             <p>
               This was great practice to cement good habits with{" "}
               <strong>my understanding of responsive design</strong> and how to
-              <strong> manage and keep my code clean.</strong>I learned how to
+              <strong> manage and keep my code clean.</strong> I learned how to
               make responsive navigation that switches into a toggle menu. This
               tested my
-              <strong>critical thinking and planning skills</strong> on how to
+              <strong> critical thinking and planning skills</strong> on how to
               set up the HTML.
             </p>
             <p>

@@ -1,6 +1,6 @@
 import styles from "../styles/components/Footer.module.scss";
 
-const Footer = () => {
+const Footer = ({ visibleArrow }) => {
   return (
     <footer className="main-footer spacer">
       <div className="container">
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
         <a
           className="top-of-site-link"
-          data-visible="false"
+          data-visible={visibleArrow ? "true" : "false"}
           href="#top-of-site"
         >
           <i className="fas fa-arrow-circle-up"></i>

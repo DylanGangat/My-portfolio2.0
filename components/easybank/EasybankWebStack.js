@@ -10,7 +10,7 @@ export default function EasybankWebStack() {
             I needed the bare basics to create this static website.{" "}
             <strong>Semantic HTML</strong> for the markup, <strong>SASS</strong>{" "}
             to keep my CSS well organized, and a little bit of
-            <strong>Javascript</strong> for the navigation toggle. To deploy on
+            <strong> Javascript</strong> for the navigation toggle. To deploy on
             this website, I used <strong>Netlify</strong> which is free and easy
             to use.
           </p>

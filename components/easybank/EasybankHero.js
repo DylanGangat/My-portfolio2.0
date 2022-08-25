@@ -7,8 +7,8 @@ const EasybankHero = () => {
         <h1 className="main-heading">Easybank Landing Page</h1>
         <p className="spacer">
           This is a static landing page I built because I wanted to practice
-          taking a design and creating a<strong>pixel-perfect website</strong>{" "}
-          from it. I focused on <strong>improving my responsive design</strong>{" "}
+          taking a design and creating a<strong> pixel-perfect website</strong>{" "}
+          from it. I focused on <strong> improving my responsive design</strong>{" "}
           and using components where ever I could within this site to make
           development easier and scalable if needed in the future.
         </p>

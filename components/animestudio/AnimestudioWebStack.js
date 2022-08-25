@@ -9,7 +9,7 @@ export default function AnimestudioWebStack() {
           <p>
             With my newfound knowledge in Javascript and the need to use an API,
             I decided that
-            <strong>Javascript</strong>
+            <strong> Javascript </strong>
             was needed for this project. I also used <strong>SASS</strong>{" "}
             because I felt it gives me much more structure, flexibility and I
             could embed my media queries within the classes making my classes

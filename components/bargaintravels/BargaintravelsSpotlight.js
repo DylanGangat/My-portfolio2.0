@@ -18,7 +18,7 @@ export default function BargaintravelsSpotlight() {
               </p>
               <p>
                 The only API I found that had the information I needed had{" "}
-                <strong>a hard limit of 500 calls.</strong>
+                <strong>a hard limit of 500 calls. </strong>
                 So I thought this was a great challenge to test my abilities
                 with the structuring and planning of my code before calling the
                 API.

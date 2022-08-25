@@ -2,7 +2,8 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Head from "next/head";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
+import React from "react";
 
 const Layout = ({ children }) => {
   useEffect(() => {
@@ -29,6 +30,26 @@ const Layout = ({ children }) => {
       document.documentElement.setAttribute("data-color-mode", "dark");
       localStorage.setItem("data-color-mode", "dark");
     }
+  };
+
+  // To see if the user scrolled up to showcase the navigation
+  const [stickyNav, setStickyNav] = useState(false);
+  const [visibleArrow, setvisibleArrow] = useState(false);
+
+  const watchNav = e =>
+    e.nativeEvent.wheelDelta > 0 ? setStickyNav(true) : setStickyNav(false);
+
+  // To see if the user scrolled down to showcase the navigate to the top of site arrow
+
+  const watchArrow = e => {
+    e.nativeEvent.wheelDelta < 0
+      ? setvisibleArrow(true)
+      : setvisibleArrow(false);
+  };
+
+  const watchScroll = e => {
+    watchNav(e);
+    watchArrow(e);
   };
 
   return (
@@ -73,9 +94,11 @@ const Layout = ({ children }) => {
           crossOrigin="anonymous"
         />
       </Head>
-      <Navbar toggleColorMode={toggleColorMode}/>
-      {children}
-      <Footer />
+      <div onWheel={e => watchScroll(e)}>
+        <Navbar toggleColorMode={toggleColorMode} stickyNav={stickyNav} />
+        {children}
+        <Footer visibleArrow={visibleArrow} />
+      </div>
     </>
   );
 };
