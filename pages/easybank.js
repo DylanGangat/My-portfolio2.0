@@ -10,9 +10,6 @@ import SectionComingSoon from "../components/SectionComingSoon";
 import SectionContact from "../components/SectionContact";
 
 const Easybank = () => {
-  // if (typeof window !== "undefined") {
-  //   // your code with access to window or document object here
-  //   }
   // To give this page it's unique colours
   useEffect(() => {
     document.body.classList.add("easybank-colors");
