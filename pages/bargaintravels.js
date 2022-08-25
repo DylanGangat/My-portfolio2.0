@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useEffect } from "react";
 import BargaintravelsHero from "../components/bargaintravels/BargaintravelsHero";
 import BargaintravelsGoals from "../components/bargaintravels/BargaintravelsGoals";
 import BargaintravelsWebStack from "../components/bargaintravels/BargaintravelsWebStack";
@@ -8,12 +9,14 @@ import BargaintravelsOtherProjects from "../components/bargaintravels/Bargaintra
 import SectionComingSoon from "../components/SectionComingSoon";
 import SectionContact from "../components/SectionContact";
 
-export default function bargaintravels() {
+export default function Bargaintravels() {
   // To give this page it's unique colours
-  document.body.classList.add("bargaintravels-colors");
-  document.body.classList.remove("animestudio-colors");
-  document.body.classList.remove("easybank-colors");
 
+  useEffect(() => {
+    document.body.classList.add("bargaintravels-colors");
+    document.body.classList.remove("animestudio-colors");
+    document.body.classList.remove("easybank-colors");
+  });
   return (
     <>
       <Head>
