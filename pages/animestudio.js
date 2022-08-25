@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useEffect } from "react";
 import AnimestudioGoals from "../components/animestudio/AnimestudioGoals";
 import AnimestudioHero from "../components/animestudio/AnimestudioHero";
 import AnimestudioLessons from "../components/animestudio/AnimestudioLessons";
@@ -10,11 +9,12 @@ import SectionComingSoon from "../components/SectionComingSoon";
 import SectionContact from "../components/SectionContact";
 
 export default function animestudio() {
-  useEffect(() => {
-    document.body.classList.add("animestudio-colors");
-    document.body.classList.remove("bargaintravels-colors");
-    document.body.classList.remove("easybank-colors");
-  }, []);
+  // To give this page it's unique colours
+
+  document.body.classList.add("animestudio-colors");
+  document.body.classList.remove("bargaintravels-colors");
+  document.body.classList.remove("easybank-colors");
+
   return (
     <>
       <Head>

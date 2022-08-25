@@ -41,11 +41,10 @@ const Layout = ({ children }) => {
 
   // To see if the user scrolled down to showcase the navigate to the top of site arrow
 
-  const watchArrow = e => {
+  const watchArrow = e =>
     e.nativeEvent.wheelDelta < 0
       ? setvisibleArrow(true)
       : setvisibleArrow(false);
-  };
 
   const watchScroll = e => {
     watchNav(e);

@@ -5,19 +5,14 @@ import BargaintravelsWebStack from "../components/bargaintravels/BargaintravelsW
 import BargaintravelsSpotlight from "../components/bargaintravels/BargaintravelsSpotlight";
 import BargaintravelsLessons from "../components/bargaintravels/BargaintravelsLessons";
 import BargaintravelsOtherProjects from "../components/bargaintravels/BargaintravelsOtherProjects";
-
 import SectionComingSoon from "../components/SectionComingSoon";
 import SectionContact from "../components/SectionContact";
-import { useEffect } from "react";
 
 export default function bargaintravels() {
   // To give this page it's unique colours
-
-  useEffect(() => {
-    document.body.classList.add("bargaintravels-colors");
-    document.body.classList.remove("animestudio-colors");
-    document.body.classList.remove("easybank-colors");
-  }, []);
+  document.body.classList.add("bargaintravels-colors");
+  document.body.classList.remove("animestudio-colors");
+  document.body.classList.remove("easybank-colors");
 
   return (
     <>

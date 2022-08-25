@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useEffect } from "react";
 import EasybankGoals from "../components/easybank/EasybankGoals";
 import EasybankHero from "../components/easybank/EasybankHero";
 import EasybankLessons from "../components/easybank/EasybankLessons";
@@ -10,11 +9,10 @@ import SectionComingSoon from "../components/SectionComingSoon";
 import SectionContact from "../components/SectionContact";
 
 const Easybank = () => {
-  useEffect(() => {
-    document.body.classList.add("easybank-colors");
-    document.body.classList.remove("bargaintravels-colors");
-    document.body.classList.remove("animestudio-colors");
-  }, []);
+  // To give this page it's unique colours
+  document.body.classList.add("easybank-colors");
+  document.body.classList.remove("bargaintravels-colors");
+  document.body.classList.remove("animestudio-colors");
 
   return (
     <>
