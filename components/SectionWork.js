@@ -64,7 +64,7 @@ const SectionWork = () => {
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      enable-background="new 0 0 24 24"
+                      enableBackground="new 0 0 24 24"
                       viewBox="0 0 24 24"
                     >
                       <path d="M23.961,11.954l-0.017-0.007l0.049,0.049C24.014,11.996,23.961,11.954,23.961,11.954z" />

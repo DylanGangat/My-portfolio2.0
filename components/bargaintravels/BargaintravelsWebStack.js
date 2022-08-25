@@ -37,8 +37,8 @@ export default function BargaintravelsWebStack() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M12.5 10C14.1664 3.33359 18.3336 0 25 0C35 0 36.25 7.5 41.25 8.75C44.5836 9.58359 47.5 8.33359 50 5C48.3336 11.6664 44.1664 15 37.5 15C27.5 15 26.25 7.5 21.25 6.25C17.9164 5.41641 15 6.66641 12.5 10ZM0 25C1.66641 18.3336 5.83359 15 12.5 15C22.5 15 23.75 22.5 28.75 23.75C32.0836 24.5836 35 23.3336 37.5 20C35.8336 26.6664 31.6664 30 25 30C15 30 13.75 22.5 8.75 21.25C5.41641 20.4164 2.5 21.6664 0 25Z"
                   fill="url(#paint0_linear_980:1069)"
                 />
@@ -51,8 +51,8 @@ export default function BargaintravelsWebStack() {
                     y2="56.6664"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#2383AE" />
-                    <stop offset="1" stop-color="#6DD7B9" />
+                    <stop stopColor="#2383AE" />
+                    <stop offset="1" stopColor="#6DD7B9" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -104,8 +104,8 @@ export default function BargaintravelsWebStack() {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(25 -25) scale(50.1269)"
                   >
-                    <stop stop-color="#20C6B7" />
-                    <stop offset="1" stop-color="#4D9ABF" />
+                    <stop stopColor="#20C6B7" />
+                    <stop offset="1" stopColor="#4D9ABF" />
                   </radialGradient>
                 </defs>
               </svg>

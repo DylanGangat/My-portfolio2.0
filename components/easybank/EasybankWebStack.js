@@ -76,8 +76,8 @@ export default function EasybankWebStack() {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(25 -25) scale(50.1269)"
                   >
-                    <stop stop-color="#20C6B7" />
-                    <stop offset="1" stop-color="#4D9ABF" />
+                    <stop stopColor="#20C6B7" />
+                    <stop offset="1" stopColor="#4D9ABF" />
                   </radialGradient>
                 </defs>
               </svg>
