@@ -4,6 +4,8 @@ import styles from "../styles/components/404.module.scss";
 import Image from "next/image";
 import robot from "/public/images/404.svg";
 
+import { motion } from "framer-motion";
+
 export default function ErrorPage() {
   return (
     <>
@@ -16,7 +18,12 @@ export default function ErrorPage() {
       </Head>
       <section className={styles["error-page"]}>
         <div className="container flow-content">
-          <div className={styles.robot}>
+          <motion.div
+            className={styles.robot}
+            initial={{ opacity: 0, translateX: -20 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
             <Image
               src={robot}
               layout="responsive"
@@ -25,8 +32,13 @@ export default function ErrorPage() {
               objectFit="contain"
               alt="robot with a box"
             />
-          </div>
-          <div className="spacer">
+          </motion.div>
+          <motion.div
+            className="spacer"
+            initial={{ opacity: 0, translateY: 20 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
             <div>
               <h1 className={styles.title}>404</h1>
               <p className={styles.title}>Oooops!</p>
@@ -39,7 +51,7 @@ export default function ErrorPage() {
             <Link href="/">
               <a className="btn spacer">Back to Home</a>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

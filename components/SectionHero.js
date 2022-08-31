@@ -1,11 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const SectionHero = () => {
   return (
     <section className="hero watches center">
       <div className="container">
-        <div className="flow-content">
+        <motion.div
+          className="flow-content"
+          initial={{ opacity: 0, translateX: -30 }}
+          animate={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 0.8 }}
+        >
           <p className="subtitle">Hi, {`I'm`} Dylan a</p>
           <h1 className="main-heading">Frontend Developer</h1>
           <p className="subtitle">
@@ -15,9 +21,14 @@ const SectionHero = () => {
           <Link href="#work">
             <a className="btn">Check my work</a>
           </Link>
-        </div>
+        </motion.div>
 
-        <div className="spacer">
+        <motion.div
+          className="spacer"
+          initial={{ opacity: 0, translateY: 30 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.8 }}
+        >
           <Image
             src="/images/portfolio-images/dylan-color2_2k.jpg"
             alt="Dylan smiling"
@@ -26,7 +37,7 @@ const SectionHero = () => {
             priority
             objectFit="cover"
           />
-        </div>
+        </motion.div>
       </div>
       {/* <!-- close container --> */}
     </section>
