@@ -1,0 +1,17 @@
+.error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;   
+    // height: calc(100vh - var(--nav-height));
+    text-align: center;   
+}
+
+.error-page .title {
+    font-size: var(--fs-600);
+    font-weight: var(--fw-400);
+}
+
+// .error-page .robot {
+//     max-height: 7rem;
+// }

@@ -36,6 +36,11 @@ const Layout = ({ children }) => {
   const [stickyNav, setStickyNav] = useState(false);
   const [visibleArrow, setvisibleArrow] = useState(false);
 
+  // const watchScroll = e => {
+  //   console.log(e);
+  //   console.log("Hello world");
+  // };
+
   const watchNav = e =>
     e.nativeEvent.wheelDelta > 0 ? setStickyNav(true) : setStickyNav(false);
 
@@ -47,6 +52,7 @@ const Layout = ({ children }) => {
       : setvisibleArrow(false);
 
   const watchScroll = e => {
+    console.log("EVENT: ", e);
     watchNav(e);
     watchArrow(e);
   };
@@ -93,7 +99,7 @@ const Layout = ({ children }) => {
           crossOrigin="anonymous"
         />
       </Head>
-      <div onWheel={e => watchScroll(e)}>
+      <div onScroll={e => watchScroll(e)}>
         <Navbar toggleColorMode={toggleColorMode} stickyNav={stickyNav} />
         {children}
         <Footer visibleArrow={visibleArrow} />

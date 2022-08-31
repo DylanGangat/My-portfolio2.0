@@ -9,10 +9,11 @@ section {
   }
   
   .primary-header {
+    height: var(--nav-height);
+    width: 100%;   
     border-bottom: var(--nav-border);
     padding: 1.5rem 0;
     background-color: var(--clr-base);
-    width: 100%;   
   }
 
   .primary-header.sticky {
