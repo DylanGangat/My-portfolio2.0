@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
       : setvisibleArrow(false);
 
   const watchScroll = e => {
-    console.log("EVENT: ", e);
+    // console.log("EVENT: ", e);
     watchNav(e);
     watchArrow(e);
   };
@@ -99,7 +99,7 @@ const Layout = ({ children }) => {
           crossOrigin="anonymous"
         />
       </Head>
-      <div onScroll={e => watchScroll(e)}>
+      <div onWheel={e => watchScroll(e)}>
         <Navbar toggleColorMode={toggleColorMode} stickyNav={stickyNav} />
         {children}
         <Footer visibleArrow={visibleArrow} />
