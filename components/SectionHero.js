@@ -8,9 +8,9 @@ const SectionHero = () => {
       <div className="container">
         <motion.div
           className="flow-content"
-          initial={{ opacity: 0, translateX: -30 }}
+          initial={{ opacity: 0, translateX: -40 }}
           animate={{ opacity: 1, translateX: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1 }}
         >
           <p className="subtitle">Hi, {`I'm`} Dylan a</p>
           <h1 className="main-heading">Frontend Developer</h1>
@@ -25,9 +25,9 @@ const SectionHero = () => {
 
         <motion.div
           className="spacer"
-          initial={{ opacity: 0, translateY: 30 }}
+          initial={{ opacity: 0, translateY: 40 }}
           animate={{ opacity: 1, translateY: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1 }}
         >
           <Image
             src="/images/portfolio-images/dylan-color2_2k.jpg"

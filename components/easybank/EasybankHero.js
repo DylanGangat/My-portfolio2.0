@@ -1,10 +1,18 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const EasybankHero = () => {
   return (
     <section className="intro watches flow-content">
       <div className="container">
-        <h1 className="main-heading">Easybank Landing Page</h1>
+        <motion.h1
+          initial={{ opacity: 0, translateY: 30 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 1 }}
+          className="main-heading"
+        >
+          Easybank Landing Page
+        </motion.h1>
         <p className="spacer">
           This is a static landing page I built because I wanted to practice
           taking a design and creating a<strong> pixel-perfect website</strong>{" "}

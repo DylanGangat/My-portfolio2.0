@@ -1,12 +1,18 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function AnimestudioHero() {
   return (
     <section className="intro watches flow-content">
       <div className="container">
-        <h1 className="main-heading">
+        <motion.h1
+          initial={{ opacity: 0, translateY: 30 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 1 }}
+          className="main-heading"
+        >
           Animestudio<span className="text-pink">+</span>
-        </h1>
+        </motion.h1>
         <div className="spacer flow-content">
           <p>
             I <strong>designed and developed</strong> the full website right
