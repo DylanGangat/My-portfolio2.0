@@ -263,7 +263,7 @@ const SectionWork = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/DylanGangat/sunnyside"
+                href="https://sunnyside-website.herokuapp.com/"
               >
                 <Image
                   src="/images/mockups/project-mockups/sunnyside-project-mockup2.webp"
@@ -281,7 +281,7 @@ const SectionWork = () => {
                     className="project-title"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://github.com/DylanGangat/sunnyside"
+                    href="https://sunnyside-website.herokuapp.com/"
                   >
                     Sunnyside landing page
                   </a>

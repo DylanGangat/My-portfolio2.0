@@ -162,7 +162,7 @@ export default function AnimestudioOtherProjects() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/DylanGangat/sunnyside"
+                href="https://sunnyside-website.herokuapp.com/"
               >
                 <Image
                   src="/images/mockups/project-mockups/sunnyside-project-mockup2.webp"
@@ -180,7 +180,7 @@ export default function AnimestudioOtherProjects() {
                     className="project-title"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://github.com/DylanGangat/sunnyside"
+                    href="https://sunnyside-website.herokuapp.com/"
                   >
                     Sunnyside landing page
                   </a>
@@ -427,7 +427,7 @@ export default function AnimestudioOtherProjects() {
               </div>
             </div>
           </article>
-          
+
           {/* <!-- Card 6 --> */}
           <article className="card">
             <div className="mockup">

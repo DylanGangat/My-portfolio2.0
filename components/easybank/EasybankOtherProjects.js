@@ -152,7 +152,7 @@ export default function EasybankOtherProjects() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/DylanGangat/sunnyside"
+                href="https://sunnyside-website.herokuapp.com/"
               >
                 <Image
                   src="/images/mockups/project-mockups/sunnyside-project-mockup2.webp"
@@ -170,7 +170,7 @@ export default function EasybankOtherProjects() {
                     className="project-title"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://github.com/DylanGangat/sunnyside"
+                    href="https://sunnyside-website.herokuapp.com/"
                   >
                     Sunnyside landing page
                   </a>
